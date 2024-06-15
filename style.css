@@ -1,0 +1,41 @@
+body{
+    margin: 3rem;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1{
+    font: normal 50pt arial;
+}
+
+h2{
+
+    font: normal 25pt arial;
+}
+
+p{
+    font: normal 20pt arial;
+}
+
+.lista{
+    width: 90%;
+    margin-top: 10px;
+    background-color: chartreuse;
+    box-shadow: 10px 10px 20px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+hr{
+    border-color: blueviolet;
+}
+
+#inputBySubstring{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.5rem;
+}
