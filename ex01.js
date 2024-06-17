@@ -44,12 +44,13 @@ resultado4.innerText = textoMinusculo
 // Extrair uma Substring
 // Escreva uma função que receba uma string e dois índices, e retorne a substring correspondente.
 
-function extractsubstring(extract){
-    return extract.substring()
+function extractsubstring(extract,indexStart,indexEnd){
+    const result = extract.substring(indexStart,indexEnd)
+    return result
+    
 }
-
 const frase = "Todos sabem que o Cristiano Ronaldo é melhor que o Messi"
-const extract = frase.substring(18,56)
+const extract = extractsubstring(frase, 18, 56)
 resultado5.innerText = extract
 
 
@@ -73,3 +74,30 @@ function localizarString(){
 
 // Repetir String
 // Escreva uma função que receba uma string e um número, e retorne a string repetida esse número de vezes.
+
+const text = document.getElementById('text')
+const numero = document.getElementById('recebeNumber')
+
+function repeatString(){
+    const result = text.value.repeat(numero.value);
+    document.getElementById('resultado7').innerText = result; 
+}
+
+
+// Remover Espaços no Início e no Fim
+// Escreva uma função que remova os espaços em branco do início e do fim de uma string.
+
+function removeSpaces(){
+    const textoComEspaco = document.getElementById('spaceTxt').value
+    const resultadoSemEspaco = textoComEspaco.trim()
+    document.getElementById('resultado8').innerHTML = resultadoSemEspaco
+
+}
+
+// Substituir Caracteres
+// Escreva uma função que substitua todas as ocorrências de um caractere específico por outro em uma string.
+
+
+
+// Dividir String em Array
+// Escreva uma função que divida uma string em um array de substrings com base em um separador especificado.
