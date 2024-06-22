@@ -111,10 +111,10 @@
         Escreva uma função que receba uma string e um número, e retorne a string repetida esse número de vezes.
     </p>
     <div id="inputBySubstring">
-        <label for="string">Texto:</label>
-        <input type="text" id="text">
+        <label for="textForRepeat">Texto:</label>
+        <input type="text" id="textForRepeat">
 
-        <label for="numero">texto a ser repetido:</label>
+        <label for="recebeNumber">texto a ser repetido:</label>
         <input type="number" id="recebeNumber">
         <button id="bntBuscar" onclick="repeatString()">Enviar</button>
     </div>
@@ -136,9 +136,55 @@
     <div id="inputBySubstring">
         <label for="string">Texto:</label>
         <input type="text" id="spaceTxt">
-        <button id="bntBuscar" onclick="removeSpaces()">Enviar</button>
+        <button id="bntBuscar" onclick="actionRemoveSpaces()">Enviar</button>
     </div>
     <p id="resultado8"></p>
+</div>
+
+
+
+<div class="lista">
+    <h2>
+        Substituir Caracteres
+    </h2>
+    <hr>
+    <p>
+        Escreva uma função que substitua todas as ocorrências de um caractere específico por outro em uma string.
+    </p>
+    <div id="inputs-substituir-caracteres">
+        <label for="textoRecebido1">Digite o texto:</label>
+        <input type="text" id="textoRecebido1">
+
+        <label for="recebeCaractereParaSerTrocado">trocar:</label>
+        <input type="text" id="recebeCaractereParaSerTrocado">
+
+        <label for="recebeCaractereParaTrocar">por:</label>
+        <input type="text" id="recebeCaractereParaTrocar" >
+
+        <button id="bntBuscar" onclick="gatilhoCaracteres()">Enviar Caracteres</button>
+    </div>
+    <p id="resultado9"></p>
+</div>
+
+
+
+<div class="lista">
+    <h2>
+        Dividir String em Array
+    </h2>
+    <hr>
+    <p>
+        Escreva uma função que divida uma string em um array de substrings com base em um separador especificado.
+    </p>
+    <div id="inputBySubstring">
+        <label for="DivitirStringTxt">Texto:</label>
+        <input type="text" id="DivitirStringTxt">
+
+        <label for="separador">Separador</label>
+        <input type="text" id="separador">
+        <button id="bntBuscar" onclick= "actionDividirStrings()">Enviar</button>
+    </div>
+    <p id="resultado10"></p>
 </div>
 
     <script src="ex01.js"></script>
